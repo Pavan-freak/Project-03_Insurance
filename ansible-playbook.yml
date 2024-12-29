@@ -1,6 +1,6 @@
 - name : Configure Docker on EC2 Instances
   hosts : testserver
-  become: ansiuser
+  become: root
   tasks : 
   - name: updating apt
     command : sudo apt-get update
